@@ -213,7 +213,7 @@ user_states = {}
 # ========== КОМАНДЫ БОТА ==========
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
-    welcome_text = """
+    welcome_text = ""
 🏠 *ОЦЕНЩИК НЕДВИЖИМОСТИ*
 
 Я помогу оценить стоимость квартиры в вашем городе на основе:
@@ -234,7 +234,7 @@ def send_welcome(message):
 /infra - список инфраструктуры
 
 *Для расчета используйте команду /calculate*
-"""
+""
     bot.reply_to(message, welcome_text, parse_mode='Markdown')
 
 @bot.message_handler(commands=['help'])
@@ -262,5 +262,6 @@ def send_help(message):
 }
 
   
+
 
 
