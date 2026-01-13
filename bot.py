@@ -6,7 +6,7 @@ from dataclasses import dataclass, asdict
 from typing import Dict, List, Tuple, Optional
 import math
 
-# ========== ВАШ КАЛЬКУЛЯТОР (не меняем) ==========
+# ========== ВАШ КАЛЬКУЛЯТОР ==========
 @dataclass
 class ApartmentParams:
     """Параметры квартиры"""
@@ -199,7 +199,7 @@ class PriceCalculator:
 # Получаем токен из переменных окружения (Render добавит)
 TOKEN = os.getenv('7983712081:AAHhDZcFrKCFcXPcdFDg6PM_Rpl5mhAxPOE')
 if not TOKEN:
-    print("❌ ОШИБКА: Токен не найден!")
+    print("ОШИБКА: Токен не найден!")
     print("Добавьте переменную 7983712081:AAHhDZcFrKCFcXPcdFDg6PM_Rpl5mhAxPOE в Render")
     print("Текущие переменные окружения:", os.environ.keys())
     exit(1)
@@ -214,7 +214,7 @@ user_states = {}
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
     welcome_text = ""
-🏠 *ОЦЕНЩИК НЕДВИЖИМОСТИ*
+ *ОЦЕНЩИК НЕДВИЖИМОСТИ*
 
 Я помогу оценить стоимость квартиры в вашем городе на основе:
 • Района
@@ -262,6 +262,7 @@ def send_help(message):
 }
 
   
+
 
 
 
