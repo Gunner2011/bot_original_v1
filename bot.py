@@ -239,7 +239,7 @@ def send_welcome(message):
 
 @bot.message_handler(commands=['help'])
 def send_help(message):
-    help_text = """
+    help_text = ""
 📚 *КАК ПОЛЬЗОВАТЬСЯ БОТОМ:*
 
 1. Начните с команды /calculate
@@ -262,3 +262,4 @@ def send_help(message):
 }
 
   
+
